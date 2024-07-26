@@ -1,5 +1,6 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #f7f7f7; /* Color de fondo suave */
+    font-family: Arial, sans-serif;
 }
 
 .navbar-brand {
@@ -12,4 +13,25 @@ body {
 
 h2 {
     margin-bottom: 30px;
+}
+
+        
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Color de fondo del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    line-height: 1.6;
 }

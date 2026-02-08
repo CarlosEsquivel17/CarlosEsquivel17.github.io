@@ -10,9 +10,17 @@ const Projects = () => {
 
     const projects = [
         {
+            id: 5,
+            title: "Kanban CRM",
+            description: "CRM system based on Kanban flow using Django REST Framework and React.js.",
+            technologies: ["React", "Django REST Framework", "Python", "Kanban", "PostgreSQL"],
+            github: "https://github.com/CarlosEsquivel17",
+            featured: true
+        },
+        {
             id: 1,
-            title: "Portafolio Personal",
-            description: "Portafolio web moderno desarrollado con React y Vite, con animaciones fluidas y diseño responsive.",
+            title: "Personal Portfolio",
+            description: "Modern web portfolio developed with React and Vite, with smooth animations and responsive design.",
             technologies: ["React", "Vite", "Framer Motion", "CSS3"],
             github: "https://github.com/CarlosEsquivel17",
             demo: "#",
@@ -20,24 +28,17 @@ const Projects = () => {
         },
         {
             id: 2,
-            title: "Proyecto Unity VR",
-            description: "Aplicación de realidad virtual desarrollada en Unity, implementando interacciones inmersivas.",
+            title: "Unity VR Project",
+            description: "Virtual reality application developed in Unity, implementing immersive interactions.",
             technologies: ["Unity", "C#", "VR SDK", "Blender"],
             github: "https://github.com/CarlosEsquivel17",
             featured: true
         },
         {
             id: 3,
-            title: "Sistema Web Full Stack",
-            description: "Aplicación web completa con autenticación, CRUD y panel de administración.",
-            technologies: ["React", "Node.js", "MongoDB", "Express"],
-            github: "https://github.com/CarlosEsquivel17",
-        },
-        {
-            id: 4,
-            title: "Script de Automatización",
-            description: "Herramientas de automatización en Python para procesamiento de datos y tareas repetitivas.",
-            technologies: ["Python", "Pandas", "NumPy"],
+            title: "Full Stack Web System",
+            description: "Complete web application with authentication, CRUD, and administration panel.",
+            technologies: ["React", "Node.js", "PostgreSQL", "Express"],
             github: "https://github.com/CarlosEsquivel17",
         }
     ];
@@ -66,7 +67,7 @@ const Projects = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="section-title">
-                        <span className="title-number">04.</span> Proyectos Destacados
+                        <span className="title-number">04.</span> Featured Projects
                     </h2>
 
                     <motion.div
@@ -84,7 +85,7 @@ const Projects = () => {
                             >
                                 <div className="project-content">
                                     {project.featured && (
-                                        <span className="featured-badge">Destacado</span>
+                                        <span className="featured-badge">Featured</span>
                                     )}
                                     <h3 className="project-title">{project.title}</h3>
                                     <p className="project-description">{project.description}</p>
@@ -94,46 +95,9 @@ const Projects = () => {
                                             <span key={tech} className="tech-tag">{tech}</span>
                                         ))}
                                     </div>
-
-                                    <div className="project-links">
-                                        <a
-                                            href={project.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="project-link"
-                                        >
-                                            <FiGithub /> Código
-                                        </a>
-                                        {project.demo && (
-                                            <a
-                                                href={project.demo}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="project-link"
-                                            >
-                                                <FiExternalLink /> Demo
-                                            </a>
-                                        )}
-                                    </div>
                                 </div>
                             </motion.div>
                         ))}
-                    </motion.div>
-
-                    <motion.div
-                        className="view-more"
-                        initial={{ opacity: 0 }}
-                        animate={isInView ? { opacity: 1 } : {}}
-                        transition={{ delay: 0.8 }}
-                    >
-                        <a
-                            href="https://github.com/CarlosEsquivel17"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-secondary"
-                        >
-                            Ver Más en GitHub <FiGithub />
-                        </a>
                     </motion.div>
                 </motion.div>
             </div>

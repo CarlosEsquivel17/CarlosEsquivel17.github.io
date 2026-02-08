@@ -1,8 +1,7 @@
 import { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { FiExternalLink, FiAward } from 'react-icons/fi';
-import { certificatesData, categories } from '../data/certificates';
+import { certificatesData, categories } from './certificates.js';
 import './Certificates.css';
 
 const Certificates = () => {
@@ -25,8 +24,14 @@ const Certificates = () => {
     };
 
     const item = {
-        hidden: { opacity: 0, y: 20 },
-        show: { opacity: 1, y: 0 }
+        hidden: { opacity: 0, y: 20, scale: 0.9 },
+        show: {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            transition: { type: "spring", stiffness: 50 }
+        },
+        exit: { opacity: 0, scale: 0.9, transition: { duration: 0.2 } }
     };
 
     return (
@@ -38,7 +43,7 @@ const Certificates = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="section-title">
-                        <span className="title-number">03.</span> Certificaciones
+                        <span className="title-number">03.</span> Certificates
                     </h2>
 
                     <div className="certificates-filter">
@@ -62,34 +67,35 @@ const Certificates = () => {
                         initial="hidden"
                         animate={isInView ? "show" : "hidden"}
                     >
-                        {filteredCertificates.map((cert, index) => (
-                            <motion.div
-                                key={cert.id}
-                                className="certificate-card"
-                                variants={item}
-                                layout
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0, scale: 0.8 }}
-                                transition={{ duration: 0.3, delay: index * 0.05 }}
-                                whileHover={{ y: -10 }}
-                            >
-                                <div className="certificate-header" style={{ backgroundColor: cert.color }}>
-                                    <FiAward className="certificate-icon" />
-                                </div>
-                                <div className="certificate-body">
-                                    <h3 className="certificate-title">{cert.title}</h3>
-                                    <a
-                                        href={cert.pdfPath}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="certificate-link"
-                                    >
-                                        Ver Certificado <FiExternalLink />
-                                    </a>
-                                </div>
-                            </motion.div>
-                        ))}
+                        <AnimatePresence mode='popLayout'>
+                            {filteredCertificates.map((cert) => (
+                                <motion.div
+                                    key={cert.id}
+                                    className="certificate-card"
+                                    variants={item}
+                                    layout
+                                    initial="hidden"
+                                    animate="show"
+                                    exit="exit"
+                                    whileHover={{ y: -10 }}
+                                >
+                                    <div className="certificate-header" style={{ backgroundColor: cert.color }}>
+                                        <FiAward className="certificate-icon" />
+                                    </div>
+                                    <div className="certificate-body">
+                                        <h3 className="certificate-title">{cert.title}</h3>
+                                        <a
+                                            href={cert.pdfPath}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="certificate-link"
+                                        >
+                                            View Certificate <FiExternalLink />
+                                        </a>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </AnimatePresence>
                     </motion.div>
                 </motion.div>
             </div>

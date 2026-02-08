@@ -116,7 +116,13 @@ const Hero = () => {
                     transition={{ delay: 0.5, duration: 0.8 }}
                 >
                     <div className="image-container">
-                        <div className="profile-circle"></div>
+                        <div className="profile-circle">
+                            <img
+                                src="https://github.com/CarlosEsquivel17.png"
+                                alt="Carlos Esquivel"
+                                className="profile-img"
+                            />
+                        </div>
                     </div>
                 </motion.div>
             </div>

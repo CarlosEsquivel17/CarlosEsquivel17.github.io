@@ -1,4 +1,4 @@
-import { FiGithub, FiMail, FiPhone, FiHeart } from 'react-icons/fi';
+import { FiGithub, FiMail, FiPhone, FiHeart, FiLinkedin } from 'react-icons/fi';
 import './Footer.css';
 
 const Footer = () => {
@@ -11,23 +11,23 @@ const Footer = () => {
                     <div className="footer-section">
                         <h3 className="footer-title">Carlos Esquivel</h3>
                         <p className="footer-description">
-                            Desarrollador Full Stack & Unity Developer
+                            Full Stack Developer & Unity Developer
                         </p>
                     </div>
 
                     <div className="footer-section">
-                        <h4 className="footer-subtitle">Enlaces Rápidos</h4>
+                        <h4 className="footer-subtitle">Quick Links</h4>
                         <ul className="footer-links">
-                            <li><a href="#about">Sobre Mí</a></li>
-                            <li><a href="#skills">Habilidades</a></li>
-                            <li><a href="#certificates">Certificados</a></li>
-                            <li><a href="#projects">Proyectos</a></li>
-                            <li><a href="#contact">Contacto</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#certificates">Certificates</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
 
                     <div className="footer-section">
-                        <h4 className="footer-subtitle">Contacto</h4>
+                        <h4 className="footer-subtitle">Contact</h4>
                         <ul className="footer-contact">
                             <li>
                                 <FiMail />
@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
 
                     <div className="footer-section">
-                        <h4 className="footer-subtitle">Sígueme</h4>
+                        <h4 className="footer-subtitle">Follow me</h4>
                         <div className="footer-social">
                             <a
                                 href="https://github.com/CarlosEsquivel17"
@@ -59,16 +59,24 @@ const Footer = () => {
                             >
                                 <FiMail size={24} />
                             </a>
+                            <a
+                                href="https://www.linkedin.com/in/carlos-esquivel-002a62250/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                            >
+                                <FiLinkedin size={24} />
+                            </a>
                         </div>
                     </div>
                 </div>
 
                 <div className="footer-bottom">
                     <p>
-                        &copy; {currentYear} Carlos Esquivel. Todos los derechos reservados.
+                        &copy; {currentYear} Carlos Esquivel. All rights reserved.
                     </p>
                     <p className="footer-heart">
-                        Hecho con <FiHeart className="heart-icon" /> y React
+                        Made with React & Vite
                     </p>
                 </div>
             </div>

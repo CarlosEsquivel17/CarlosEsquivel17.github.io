@@ -17,7 +17,7 @@ const Contact = () => {
         },
         {
             icon: FiPhone,
-            title: "Teléfono",
+            title: "Phone",
             value: "+52 444 802 0254",
             link: "tel:+524448020254"
         },
@@ -38,7 +38,7 @@ const Contact = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="section-title">
-                        <span className="title-number">05.</span> Contacto
+                        <span className="title-number">05.</span> Contact
                     </h2>
 
                     <div className="contact-content">
@@ -48,11 +48,11 @@ const Contact = () => {
                             animate={isInView ? { opacity: 1, x: 0 } : {}}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            <h3 className="contact-heading">¿Tienes un proyecto en mente?</h3>
+                            <h3 className="contact-heading">Do you have a project in mind?</h3>
                             <p className="contact-description">
-                                Estoy disponible para nuevas oportunidades y colaboraciones.
-                                Si tienes un proyecto interesante o simplemente quieres conectar,
-                                no dudes en contactarme.
+                                I am available for new opportunities and collaborations.
+                                If you have an interesting project or simply want to connect,
+                                don't hesitate to contact me.
                             </p>
 
                             <motion.a
@@ -61,7 +61,7 @@ const Contact = () => {
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                Enviar Mensaje
+                                Send Message
                             </motion.a>
                         </motion.div>
 

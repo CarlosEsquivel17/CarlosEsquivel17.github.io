@@ -3,7 +3,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import {
     SiReact, SiJavascript, SiPython, SiCplusplus, SiC,
-    SiUnity, SiHtml5, SiCss3, SiLinux
+    SiUnity, SiHtml5, SiCss3, SiLinux, SiNodedotjs, SiDjango
 } from 'react-icons/si';
 import './Skills.css';
 
@@ -22,11 +22,13 @@ const Skills = () => {
             ]
         },
         {
-            title: "Backend & Lenguajes",
+            title: "Backend & Languages",
             skills: [
                 { name: "Python", icon: SiPython, level: 85 },
                 { name: "C", icon: SiC, level: 80 },
                 { name: "C++", icon: SiCplusplus, level: 80 },
+                { name: "Node.js", icon: SiNodedotjs, level: 75 },
+                { name: "Django", icon: SiDjango, level: 70 },
             ]
         },
         {
@@ -38,7 +40,7 @@ const Skills = () => {
             ]
         },
         {
-            title: "Herramientas",
+            title: "Tools",
             skills: [
                 { name: "Linux", icon: SiLinux, level: 80 },
             ]
@@ -69,7 +71,7 @@ const Skills = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="section-title">
-                        <span className="title-number">02.</span> Habilidades Técnicas
+                        <span className="title-number">02.</span> Technical Skills
                     </h2>
 
                     <motion.div

@@ -86,9 +86,9 @@ const About = () => {
                                     animate={isInView ? { scale: 1 } : {}}
                                     transition={{ duration: 0.5, delay: 0.6 }}
                                 >
-                                    4+
+                                    2+
                                 </motion.div>
-                                <div className="stat-label">Años de Experiencia</div>
+                                <div className="stat-label">Years of Experience</div>
                             </div>
 
                             <div className="stat-card">
@@ -100,7 +100,7 @@ const About = () => {
                                 >
                                     13+
                                 </motion.div>
-                                <div className="stat-label">Certificaciones</div>
+                                <div className="stat-label">Certificates</div>
                             </div>
 
                             <div className="stat-card">
@@ -112,7 +112,7 @@ const About = () => {
                                 >
                                     10+
                                 </motion.div>
-                                <div className="stat-label">Tecnologías</div>
+                                <div className="stat-label">Technologies</div>
                             </div>
                         </motion.div>
                     </div>

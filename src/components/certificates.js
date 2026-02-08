@@ -4,7 +4,7 @@ export const certificatesData = [
         title: "Microsoft Word 2019",
         category: "office",
         icon: "word",
-        pdfPath: "certificates/Certificado_Word.pdf",
+        pdfPath: "/certificates/Certificado_Word.pdf",
         color: "#2B579A"
     },
     {
@@ -12,7 +12,7 @@ export const certificatesData = [
         title: "Microsoft PowerPoint 2019",
         category: "office",
         icon: "powerpoint",
-        pdfPath: "certificates/Certificado_Power_Point.pdf",
+        pdfPath: "/certificates/Certificado_Power_Point.pdf",
         color: "#D24726"
     },
     {
@@ -20,7 +20,7 @@ export const certificatesData = [
         title: "Microsoft Excel 2019",
         category: "office",
         icon: "excel",
-        pdfPath: "certificates/Certificado_Excel.pdf",
+        pdfPath: "/certificates/Certificado_Excel.pdf",
         color: "#217346"
     },
     {
@@ -28,7 +28,7 @@ export const certificatesData = [
         title: "Microsoft Office Specialist Associate",
         category: "office",
         icon: "microsoft",
-        pdfPath: "certificates/Certificado_Specialist_Associate.pdf",
+        pdfPath: "/certificates/Certificado_Specialist_Associate.pdf",
         color: "#F25022"
     },
     {
@@ -36,7 +36,7 @@ export const certificatesData = [
         title: "HTML & CSS",
         category: "frontend",
         icon: "html",
-        pdfPath: "certificates/Certificado_HTML_CSS.pdf",
+        pdfPath: "/certificates/Certificado_HTML_CSS.pdf",
         color: "#E44D26"
     },
     {
@@ -44,7 +44,7 @@ export const certificatesData = [
         title: "C Programming",
         category: "programming",
         icon: "c",
-        pdfPath: "certificates/Certificado_C.pdf",
+        pdfPath: "/certificates/Certificado_C.pdf",
         color: "#A8B9CC"
     },
     {
@@ -52,7 +52,7 @@ export const certificatesData = [
         title: "C++ Programming",
         category: "programming",
         icon: "cpp",
-        pdfPath: "certificates/Certificado_C++.pdf",
+        pdfPath: "/certificates/Certificado_C++.pdf",
         color: "#00599C"
     },
     {
@@ -60,7 +60,7 @@ export const certificatesData = [
         title: "IT Essentials",
         category: "networking",
         icon: "cisco",
-        pdfPath: "certificates/Certificado_IT_Essentials.pdf",
+        pdfPath: "/certificates/Certificado_IT_Essentials.pdf",
         color: "#1BA0D7"
     },
     {
@@ -68,7 +68,7 @@ export const certificatesData = [
         title: "Unity Programmer",
         category: "gamedev",
         icon: "unity",
-        pdfPath: "certificates/Certificado_Programmer_Unity.pdf",
+        pdfPath: "/certificates/Certificado_Programmer_Unity.pdf",
         color: "#000000"
     },
     {
@@ -76,7 +76,7 @@ export const certificatesData = [
         title: "Unity VR Developer",
         category: "gamedev",
         icon: "vr",
-        pdfPath: "certificates/Certificado_VR.pdf",
+        pdfPath: "/certificates/Certificado_VR.pdf",
         color: "#5C2D91"
     },
     {
@@ -84,7 +84,7 @@ export const certificatesData = [
         title: "NDG Linux",
         category: "systems",
         icon: "linux",
-        pdfPath: "certificates/Certificado_Linux.pdf",
+        pdfPath: "/certificates/Certificado_Linux.pdf",
         color: "#FCC624"
     },
     {
@@ -92,7 +92,7 @@ export const certificatesData = [
         title: "Python Programming",
         category: "programming",
         icon: "python",
-        pdfPath: "certificates/Certificado_Python.pdf",
+        pdfPath: "/certificates/Certificado_Python.pdf",
         color: "#3776AB"
     },
     {
@@ -100,18 +100,18 @@ export const certificatesData = [
         title: "Entrepreneurship",
         category: "business",
         icon: "cisco",
-        pdfPath: "certificates/Certificado_TDE.pdf",
+        pdfPath: "/certificates/Certificado_TDE.pdf",
         color: "#1BA0D7"
     }
 ];
 
 export const categories = [
-    { id: "all", name: "Todos", count: 13 },
+    { id: "all", name: "All", count: 13 },
     { id: "office", name: "Microsoft Office", count: 4 },
-    { id: "programming", name: "Programación", count: 3 },
+    { id: "programming", name: "Programming", count: 3 },
     { id: "frontend", name: "Frontend", count: 1 },
     { id: "gamedev", name: "Game Dev", count: 2 },
-    { id: "systems", name: "Sistemas", count: 1 },
-    { id: "networking", name: "Redes", count: 1 },
-    { id: "business", name: "Negocios", count: 1 }
+    { id: "systems", name: "Systems", count: 1 },
+    { id: "networking", name: "Networking", count: 1 },
+    { id: "business", name: "Business", count: 1 }
 ];

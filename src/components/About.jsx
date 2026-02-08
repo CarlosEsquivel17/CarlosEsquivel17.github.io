@@ -16,7 +16,7 @@ const About = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h2 className="section-title">
-                        <span className="title-number">01.</span> Sobre Mí
+                        <span className="title-number">01.</span> About Me
                     </h2>
 
                     <div className="about-content">
@@ -27,37 +27,38 @@ const About = () => {
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
                             <p className="about-paragraph">
-                                Me llamo <span className="highlight">Carlos Emiliano Esquivel Badillo</span> y soy
-                                estudiante de la carrera de Ingeniería en Tecnologías de la Información,
-                                actualmente cursando el último año.
+                                My name is <span className="highlight">Carlos Emiliano Esquivel Badillo</span>, and I am a
+                                graduate student in Information Technology Engineering.
                             </p>
 
                             <p className="about-paragraph">
-                                Mi pasión se centra en el <span className="highlight">desarrollo de software</span>,
-                                tanto en front-end como back-end, además de mi experiencia especializada en
-                                <span className="highlight"> Unity</span> y el desarrollo de videojuegos.
+                                My main interest is <span className="highlight">software development</span>,
+                                both front-end and back-end, in addition to my knowledge and certifications
+                                in video game and Augmented/Virtual/Mixted reality
+                                <span className="highlight"> (Unity)</span>.
                             </p>
 
                             <p className="about-paragraph">
-                                Como autodidacta e investigador apasionado por la tecnología, poseo un
-                                sólido sentido de la lógica para la programación y el funcionamiento de
-                                sistemas. Cuento con múltiples certificaciones que validan mi conocimiento
-                                en diversos lenguajes de programación y tecnologías.
+                                As a self-taught and avid technology researcher, I have a solid
+                                sense of logic for programming and systems operation, as well as
+                                problem solving by applying knowledge such as OOP.
+                                I have multiple certificacions that validate my knowledge in
+                                various programming languages and technologies.
                             </p>
 
                             <div className="about-highlights">
                                 <div className="highlight-item">
                                     <div className="highlight-icon">🎓</div>
                                     <div>
-                                        <h3>Formación</h3>
-                                        <p>Ingeniería en TI</p>
+                                        <h3>Education</h3>
+                                        <p>Information Technology Engineering</p>
                                     </div>
                                 </div>
 
                                 <div className="highlight-item">
                                     <div className="highlight-icon">💼</div>
                                     <div>
-                                        <h3>Especialización</h3>
+                                        <h3>Specialization</h3>
                                         <p>Full Stack & Game Dev</p>
                                     </div>
                                 </div>
@@ -65,8 +66,8 @@ const About = () => {
                                 <div className="highlight-item">
                                     <div className="highlight-icon">🏆</div>
                                     <div>
-                                        <h3>Certificaciones</h3>
-                                        <p>13+ Certificados</p>
+                                        <h3>Certifications</h3>
+                                        <p>13+ Certifications</p>
                                     </div>
                                 </div>
                             </div>

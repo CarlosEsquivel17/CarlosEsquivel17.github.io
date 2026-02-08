@@ -8,12 +8,12 @@ const Navbar = ({ activeSection }) => {
     const [scrolled, setScrolled] = useState(false);
 
     const navItems = [
-        { id: 'home', label: 'Inicio' },
-        { id: 'about', label: 'Sobre Mí' },
-        { id: 'skills', label: 'Habilidades' },
-        { id: 'certificates', label: 'Certificados' },
-        { id: 'projects', label: 'Proyectos' },
-        { id: 'contact', label: 'Contacto' },
+        { id: 'home', label: 'Home' },
+        { id: 'about', label: 'About' },
+        { id: 'skills', label: 'Skills' },
+        { id: 'certificates', label: 'Certificates' },
+        { id: 'projects', label: 'Projects' },
+        { id: 'contact', label: 'Contact' },
     ];
 
     useEffect(() => {

@@ -41,7 +41,7 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
                     >
-                        Hola, soy
+                        Hi!, I'm
                         <span className="name-highlight"> Carlos Esquivel</span>
                     </motion.h1>
 
@@ -51,7 +51,7 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4 }}
                     >
-                        Desarrollador Full Stack & Unity Developer
+                        Full Stack & Unity Developer
                     </motion.p>
 
                     <motion.p
@@ -60,8 +60,8 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6 }}
                     >
-                        Estudiante de Ingeniería en Tecnologías de la Información
-                        especializado en desarrollo de software y videojuegos
+                        Graduate of Information Technology Engineering
+                        specializing in software and video game development.
                     </motion.p>
 
                     <motion.div
@@ -76,7 +76,7 @@ const Hero = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            Contáctame
+                            Contact me
                         </motion.button>
 
                         <motion.a
@@ -87,7 +87,7 @@ const Hero = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
-                            Ver Proyectos
+                            View Projects
                         </motion.a>
                     </motion.div>
 
